@@ -90,7 +90,7 @@ public class AgregarRegistrarController extends HttpServlet {
 			registrar.setEstado(estado);
 			registrar.setRegion(region);
 			registrarDAO.save(registrar);
-			request.setAttribute("mensaje", "href=VerRegistrarController.do");
+			request.setAttribute("mensaje", "Asistente Registrado");
 		}else {
 			request.setAttribute("errores", errores);
 		}
